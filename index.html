@@ -3,20 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <title>Lightmesh — Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="style/gallery.css">
         <link rel="stylesheet" href="style/main.css">
     </head>
     <body>
         <nav>
-            <a href="index.html"><img src="assets/images/placeholder.com-logo3.png" alt="Lightmesh Logo"></a>
-            <label>
+            <div id="navlogo"><a href="index.html"><img src="assets/images/placeholder.com-logo3.png" alt="Lightmesh Logo"></a></div>
+            <div id="navbuttons"><label>
                 <select onchange="location = this.value">
                     <option value="index.html">Home</option>
                     <option value="sub/options.html">Optionen & Preise</option>
                     <option value="sub/about.html">Über uns</option>
                     <option value="#contact">Kontakt</option>
                 </select>
-            </label>
+            </label></div>
         </nav>
         <header>
             <div id="title">
@@ -24,7 +25,7 @@
                 <h2>Leistung, die leuchtet</h2>
             </div>
         </header>
-        <main>
+        <div id="gallerybox">
             <div class="slider" id="slider1">
                 <div class="slider-inner">
                     <img src="assets/images/What-is-an-ISP-min.jpg" alt="Bild 1">
@@ -36,6 +37,8 @@
                 <button class="slider-next">&gt;</button>
             </div>
             <script src="script/gallery.js"></script>
+        </div>
+        <main>
             <h2>Licht ins Dunkel: Lightmesh bringt Klarheit ins Netz</h2>
             <p>Schnell, zuverlässig und fair:</p>
             <p>Lightmesh bietet Internetzugang mit bis zu 200 Mbit/s für nur 49,99 € im Monat.</p>
@@ -46,32 +49,78 @@
                 <li>Premium: 100 Mbit/s für 29,99 € im Monat</li>
                 <li>Pro: 200 Mbit/s für 49,99 € im Monat</li>
             </ul>
+            <br>
             <p>Wir sind uns sicher, dass Sie mit Lightmesh zufrieden sein werden, deshalb bieten wir allen unseren Kunden eine 30-tägige Geld-zurück-Garantie. Wir sind überzeugt, dass unser Service Ihren Erwartungen entsprechen wird.</p>
+            <table>
+                <tr>
+                    <th>Kunde</th>
+                    <th>Bewertung</th>
+                    <th>Kommentar</th>
+                </tr>
+                <tr>
+                    <td>Max Muster</td>
+                    <td>5 von 5</td>
+                    <td>Ich bin sehr zufrieden mit Lightmesh. Der Internetzugang ist schnell und stabil und der Kundenservice ist immer hilfsbereit und freundlich.</td>
+                </tr>
+                <tr>
+                    <td>Anna Beispiel</td>
+                    <td>4 von 5</td>
+                    <td>Ich habe bisher keine Probleme mit Lightmesh gehabt. Der Preis ist auch in Ordnung, allerdings fände ich es schön, wenn es noch mehr Optionen für das Premium-Paket gäbe.</td>
+                </tr>
+                <tr>
+                    <td>Tom Test</td>
+                    <td>3 von 5</td>
+                    <td>Ich hatte leider einige Ausfälle bei meinem Internetzugang. Der Kundenservice war aber schnell und hilfsbereit bei der Lösung des Problems.</td>
+                </tr>
+            </table>
+            <br>
+            <div id="störungsmeldung">
+                <h2>Störungsmeldung</h2>
+                <p>Bitte geben Sie hier Ihre Störungsmeldung ein:</p>
+                    <p>Ich habe momentan folgende Störungen:</p>
+                    <br>
+                    <input type="checkbox" id="keineVerbindung" name="störungen" value="keineVerbindung">
+                    <label for="keineVerbindung"> Keine Verbindung</label><br>
+                    <input type="checkbox" id="langsameVerbindung" name="störungen" value="langsameVerbindung">
+                    <label for="langsameVerbindung"> Langsame Verbindung</label><br>
+                    <input type="checkbox" id="abbrüche" name="störungen" value="abbrüche">
+                    <label for="abbrüche"> Verbindungsabbrüche</label><br>
+                    <input type="checkbox" id="sonstige" name="störungen" value="sonstige">
+                    <label for="sonstige"> Sonstige Störungen</label><br><br>
+                    <button type="submit">Absenden</button>
+            </div>
         </main>
         <footer>
-            <p>Lightmesh is a Lorem Ipsum
-                skidfh ajgiaofgb jqrjkbhar
-                gwk aprthkwnftjbkafglnh.</p>
-            <section id="contact">
-                <h3>Kontakt</h3>
-                <p>Lightmesh GmbH</p>
-                <p>Max Mustermann</p>
-                <p>Musterstraße 1</p>
-                <p>12345 Musterstadt</p>
-                <p>Telefon: 01234 56789</p>
-                <p>E-Mail: <a href="mailto:support@lightmesh.com">support@lightmesh.com</a></p>
-            </section>
-            <div id="formular">
-                <form>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="email">E-Mail:</label><br>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="message">Nachricht:</label><br>
-                    <textarea id="message" name="message"></textarea><br>
-                    <input type="submit" value="Senden">
-                </form>
+            <p id="foot-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6">
+                        <section id="contact">
+                            <h3>Kontakt</h3>
+                            <p>Lightmesh GmbH</p>
+                            <p>Max Mustermann</p>
+                            <p>Musterstraße 1</p>
+                            <p>12345 Musterstadt</p>
+                            <p>Telefon: 01234 56789</p>
+                            <p>E-Mail: <a href="mailto:support@lightmesh.com">support@lightmesh.com</a></p>
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="formular">
+                            <form>
+                                <label for="name">Name:</label><br>
+                                <input type="text" id="name" name="name"><br>
+                                <label for="email">E-Mail:</label><br>
+                                <input type="email" id="email" name="email"><br>
+                                <label for="message">Nachricht:</label><br>
+                                <textarea id="message" name="message"></textarea><br>
+                                <input type="submit" value="Senden">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html>
