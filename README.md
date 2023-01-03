@@ -1,3 +1,6 @@
+# Abgabe zur Lernveranstaltung Programmiersprachen im Web.
+### Anmerkung: Es wurde keine explizite Einschränkung der Verwendung von JavaScript in der Aufgabenstellung erwähnt, daher wird angenommen, dass die Verwendung von JavaScript erlaubt ist."
+
 # Lightmesh - Internetdienstleistungen
 Diese Webseite stellt das Unternehmen Lightmesh und dessen Internetdienstleistungen vor. Der Benutzer kann sich über die verschiedenen Angebote von Lightmesh informieren und sich mit dem Unternehmen in Kontakt setzen.
 
