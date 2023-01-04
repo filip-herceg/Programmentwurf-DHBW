@@ -41,6 +41,16 @@ index.html#main
     </ul>
 ```
 
+sub/careers.html
+```HTML
+<ul>
+    <li>Vertriebsexperte</li>
+    <li>Kundenbetreuer</li>
+    <li>Techniker</li>
+    <li>Marketing-Assistent</li>
+</ul>
+```
+
 ## Tabellen:
 sub/options.html
 ```HTML
